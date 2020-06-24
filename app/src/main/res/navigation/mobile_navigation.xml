@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.api_application_v2.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_favorites" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_tools"
+            app:destination="@id/nav_blocked" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_share"
+            app:destination="@id/nav_settings" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_send"
+            app:destination="@id/nav_about" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_history"
+            app:destination="@id/nav_history" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.api_application_v2.HistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.example.api_application_v2.FavoritesFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/nav_blocked"
+        android:name="com.example.api_application_v2.BlockedFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_blocked" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.api_application_v2.SettingsFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.api_application_v2.AboutFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_about" />
+</navigation>

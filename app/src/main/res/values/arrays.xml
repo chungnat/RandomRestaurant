@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_list_preference_titles">
+        <item>No Range</item>
+        <item>5 miles</item>
+        <item>10 miles</item>
+        <item>15 miles</item>
+        <item>20 miles</item>
+    </string-array>
+    <string-array name="settings_list_preference_values">
+        <item>0</item>
+        <item>8046</item>
+        <item>16093</item>
+        <item>24140</item>
+        <item>32186.9</item>
+    </string-array>
+</resources>
